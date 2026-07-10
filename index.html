@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Artistique Carte</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://artistique-carte.vercel.app/es/">
+<script>
+  // Detección de idioma del navegador. Por ahora solo existe ES;
+  // cuando se publiquen EN/FR, descomentar las líneas de abajo.
+  (function(){
+    var lang = (navigator.language || navigator.userLanguage || 'es').toLowerCase();
+    var dest = '/es/';
+    // if (lang.indexOf('en') === 0) dest = '/en/';
+    // else if (lang.indexOf('fr') === 0) dest = '/fr/';
+    location.replace(dest);
+  })();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=/es/"></noscript>
+</head>
+<body>
+  <p>Redirigiendo a <a href="/es/">Artistique Carte</a>…</p>
+</body>
+</html>
+
