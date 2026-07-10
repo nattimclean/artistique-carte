@@ -94,6 +94,7 @@ h2.big{font-size:clamp(2rem,4.8vw,3.4rem);max-width:20ch;margin-bottom:18px}
 .roof .spectrum{width:5px;height:64px;flex-direction:column;margin:14px 0}
 .roof .rt{font-family:'Sora',sans-serif;font-weight:700;font-size:1.02rem;color:var(--violet-d);line-height:1.2;letter-spacing:-.02em}
 @media(max-width:800px){.roof{padding:22px 0}.roof .spectrum{width:64px;height:5px;flex-direction:row}}
+.worlds-cta{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:40px}
 
 .outcomes{background:var(--cream)}
 .outcomes h2.big{max-width:22ch}
@@ -244,5 +245,17 @@ footer{background:var(--plum-deep);color:rgba(247,241,232,.6);padding:52px 0 30p
 
 .rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
 .rv.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.spectrum.grow span{animation:none;transform:none}html{scroll-behavior:auto}}
+/* refinamiento móvil: más aire, títulos que no tocan el borde */
+@media(max-width:600px){
+  .wrap{padding:0 26px}
+  .hero h1{font-size:clamp(1.95rem,8.2vw,2.6rem)}
+  .hero.slim h1{font-size:clamp(1.85rem,7.6vw,2.4rem)}
+  h2.big{font-size:clamp(1.65rem,7vw,2.2rem)}
+  .why-punch{font-size:clamp(1.35rem,5.6vw,1.9rem)}
+  .hero .sub,.lead{font-size:1.04rem}
+  .hero-inner{padding:46px 0 40px}
+  section{padding:54px 0}
+  .worlds-cta .btn{flex:1;min-width:150px;text-align:center}
+}
 
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.spectrum.grow span{animation:none;transform:none}html{scroll-behavior:auto}}
