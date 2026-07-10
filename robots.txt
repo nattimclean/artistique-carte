@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://artistique-carte.vercel.app/sitemap.xml
